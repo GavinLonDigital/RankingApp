@@ -1,0 +1,133 @@
+/* Provide sufficient contrast against white background */
+a {
+  color: #0366d6;
+}
+
+code {
+  color: #E01A76;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.items-not-ranked{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 15px;
+}
+
+.unranked-cell{
+    width:80px;
+    text-align: center;
+    margin-left: 3px;
+}
+
+.unranked-cell img, .rank-cell img{
+    width: 100%;
+    height: 100%;
+}
+
+.rankings{
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    justify-self: center;
+    margin-bottom: 15px;
+}
+
+.rank-row{
+    height: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 3px;
+    margin-bottom: 4px;
+}
+
+.top-tier{
+    background-color: yellow;
+}
+
+.middle-tier {
+    background-color: greenyellow;
+}
+
+.bottom-tier {
+    background-color: brown;
+}
+
+.worst-tier {
+    background-color: red;
+}
+.rank-cell, row-label{
+    width: 80px;
+    text-align: center;
+}
+.row-label {
+    max-width: 80px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.reload {
+    align-items: center;
+    background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+    border: 0;
+    border-radius: 8px;
+    box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    display: flex;
+    font-family: Phantomsans, sans-serif;
+    font-size: 20px;
+    justify-content: center;
+    line-height: 1em;
+    max-width: 100%;
+    min-width: 140px;
+    padding: 3px;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.reload:active,
+.reload:hover {
+    outline: 0;
+}
+
+.reload span {
+    background-color: rgb(5, 6, 45);
+    padding: 16px 24px;
+    border-radius: 6px;
+    width: 100%;
+    height: 100%;
+    transition: 300ms;
+}
+
+.reload:hover span {
+    background: none;
+}
+
+@media (min-width: 768px) {
+    .reload {
+        font-size: 24px;
+        min-width: 196px;
+    }
+}
